@@ -109,7 +109,7 @@ const About: React.FC = () => {
         
         <div className="about__more-link">
           <p>
-            Want to see more? Visit the DevPost <a href="https://hackdartmouth-ix.devpost.com/" className="link">here</a>.
+            Want to see more? Visit the DevPost <a href="https://hackdartmouth-ix.devpost.com/project-gallery" className="link">here</a>.
           </p>
         </div>
       </div>
