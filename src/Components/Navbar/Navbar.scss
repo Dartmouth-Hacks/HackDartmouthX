@@ -1,16 +1,15 @@
 .navbar {
   background-color: #1e88e5;
+  border: none;
   width: 100%;
   padding: 1rem 0;
-  height: 60px;
   position: relative; 
   
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: auto;
-    width: 100%;
+    width: 97.5%;
     padding: 0 1rem;
     height: 100%;
     position: relative;
@@ -41,6 +40,7 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    margin-right:2rem;
 
     .link {  
       color: white;
@@ -58,7 +58,7 @@
     .navbar__logo-right {  
       flex-direction: column;
       align-self: flex-start;
-      padding-top:8vh;
+      padding-top: 3vh;
       
       .mlh-badge {
         img {

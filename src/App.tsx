@@ -1,5 +1,6 @@
-import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero'
+import Navbar from './Components/Navbar'
+import Hero from './Components/Hero'
+import About from './Components/About'
 import './App.scss'
 
 function App() {
@@ -7,8 +8,10 @@ function App() {
   return (
     <div className="AppContainer">
       <Navbar />
-      <Hero />
-    
+      <div className="AppContent">
+        <Hero />
+        <About />
+      </div>
     </div>
   )
 }

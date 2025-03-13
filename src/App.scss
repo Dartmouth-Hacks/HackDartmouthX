@@ -1,11 +1,11 @@
 .AppContainer {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #67ADF1 0%, white 100%);
-  background-attachment: fixed;
-
+  position: relative;
+  overflow: hidden;
+  
   & > * {
     width: 100%;
   }
@@ -16,24 +16,19 @@
     left: 0;
     right: 0;
     z-index: 100;
+    height: 60px; 
   }
-  
-  & > section.home {
-    margin-top: 60px; 
+
+  .AppContent {
+    background: linear-gradient(to bottom, #67ADF1 0%, #67ADF1 25%, #EEF8FE 75%, #EEF8FE 100%);
+    background-attachment: scroll;
+    // margin-top: 40px;
+    // padding-top: 10px; 
     width: 100%;
-    min-height: calc(100vh - 60px); 
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y:auto;
+    overflow-x: hidden;
   }
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
-
-* {
-  box-sizing: inherit;
 }
