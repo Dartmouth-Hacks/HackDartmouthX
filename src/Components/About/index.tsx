@@ -89,22 +89,6 @@ const About: React.FC = () => {
         <p className="about__subtext">Take a look at some of last year's projects:</p>
         
         <div className="about__project-showcase">
-          {/* <Carousel
-            responsive={responsive}
-            infinite={true}
-            centerMode={true}
-            customLeftArrow={<CustomLeftArrow />}
-            customRightArrow={<CustomRightArrow />}
-            itemClass="carousel-item"
-            containerClass="carousel-container"
-            keyBoardControl={true}
-            removeArrowOnDeviceType={["mobile"]}
-            dotListClass="carousel-dots"
-            autoPlay={false}
-            autoPlaySpeed={3000}
-            partialVisible={false}
-            focusOnSelect={true}
-          > */}
           <Carousel
             responsive={responsive}
             swipeable={false}
