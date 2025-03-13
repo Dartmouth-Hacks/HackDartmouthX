@@ -1,0 +1,84 @@
+.navbar {
+  background-color: #1e88e5;
+  width: 100%;
+  padding: 1rem 0;
+  height: 60px;
+  position: relative; 
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    width: 100%;
+    padding: 0 1rem;
+    height: 100%;
+    position: relative;
+  }
+  
+  &__left {
+    display: flex;
+    align-items: center;
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      
+      img {
+        height: 32px;
+        margin-right: 0.5rem;
+      }
+      
+      span {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  &__right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    .link {  
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+      font-family: 'DM Sans', sans-serif;
+      
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    
+    .navbar__logo-right {  
+      flex-direction: column;
+      align-self: flex-start;
+      padding-top:8vh;
+      
+      .mlh-badge {
+        img {
+          height: 120px;
+        }
+      }
+    }
+  }
+}
+
+// Media query for responsiveness
+@media (max-width: 768px) {
+  .navbar {
+    &__container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    &__links {
+      gap: 1rem;
+    }
+  }
+}
