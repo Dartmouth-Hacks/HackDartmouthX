@@ -1,0 +1,58 @@
+.tracks {
+  width: 100%;
+  padding: 4rem 0;
+  margin-bottom: 10%;
+  
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  &__title {
+    color: #2F6098;
+    text-align: center;
+    font-family: "Azeret Mono";
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 3rem;
+  }
+
+  .post-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem 2rem;
+    padding: 0;
+    justify-content: center;
+    
+    > * {
+      flex: 0 1 calc(50% - 1rem);
+      min-width: 280px;
+      max-width: 550px;
+    }
+    
+    &:after {
+      content: none;
+    }
+    
+    > *:last-child:nth-child(odd) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tracks {
+    .post-card-grid {
+      > * {
+        flex: 1 1 100%;
+      }
+      
+      &:after {
+        content: none;
+      }
+    }
+  }
+}
