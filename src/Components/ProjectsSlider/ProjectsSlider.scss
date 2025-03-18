@@ -1,0 +1,56 @@
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .slick-slider {
+    max-height: 300px !important;
+  }
+
+  .slick-list {
+    padding-top: 30px !important;
+    max-height: 300px !important;
+    // overflow-y: visible;
+  }
+
+  .slick-track {
+    max-height: 300px !important;
+  }
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(47, 96, 152, 0.85);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+
+  
+  &:hover {
+    background-color: rgba(47, 96, 152, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  &-left {
+    left: -5%;
+  }
+  
+  &-right {
+    right: -5%;
+  }
+}
