@@ -4,6 +4,7 @@ import About from './Components/About'
 import './App.scss'
 import Tracks from './Components/Tracks'
 import Footer from './Components/Footer'
+import FAQ from './Components/FAQ'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <About />
         <Tracks />
+        <FAQ />
         <Footer />
       </div>
     </div>
