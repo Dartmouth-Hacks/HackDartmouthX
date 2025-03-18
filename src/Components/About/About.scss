@@ -20,13 +20,20 @@
   
   &__description {
     max-width: 900px;
-    margin: 0 auto 4rem;
+    justify-self: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 3rem;
     
     p {
-      font-size: 1.125rem;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      font-size: 1.375rem;
       line-height: 1.7;
       color: #1a365d; 
-      text-align: center;
+      text-align: left;
     }
     
     .highlight {
@@ -45,7 +52,7 @@
   
   &__subtext {
     text-align: center;
-    font-size: 1.125rem;
+    font-size: 1.375rem;
     color: #1a365d;
   }
   
@@ -62,16 +69,23 @@
     margin-top: 2rem;
     
     p {
-      font-size: 1.125rem;
+      font-size: 1.375rem;
       color: #1a365d;
     }
     
     .link {
-      color: #4299e1;
-      font-weight: 600;
-      text-decoration: none;
-      border-bottom: 1px solid #4299e1;
-      transition: opacity 0.2s ease;
+      color: #2B2B2B;
+      font-family: "DM Sans";
+      font-size: 1.375rem;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 2.1875rem;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: auto;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
       
       &:hover {
         opacity: 0.8;
