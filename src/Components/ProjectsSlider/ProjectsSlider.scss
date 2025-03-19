@@ -6,13 +6,12 @@
   margin: 0 auto;
 
   .slick-slider {
-    max-height: 300px !important;
+    max-height: 350px !important;
   }
 
   .slick-list {
     padding-top: 50px !important;
     max-height: 300px !important;
-    padding-bottom: 50px !important;
     overflow-x: hidden;
   }
 
@@ -23,7 +22,7 @@
 
 .carousel-arrow {
   position: absolute;
-  top: 60%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 10;
   width: 40px;
@@ -53,5 +52,34 @@
   
   &-right {
     right: -5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    max-height: 300px;
+    padding-bottom: 0px !important;
+
+    .slick-slider {
+      max-height: 250px !important;
+    }
+
+    .slick-track {
+      max-height: 250px !important;
+      height: 250px !important;
+      min-height: 250px !important;
+      padding-top: 25px !important;
+      padding-bottom: 0 !important;
+      overflow-x: hidden;
+    }
+
+    .slick-list {
+      max-height: 250px !important;
+      padding-top: 0 !important;
+    }
+  }
+
+  .carousel-arrow {
+    top: 45%;
   }
 }

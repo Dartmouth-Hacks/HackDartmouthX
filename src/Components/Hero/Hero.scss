@@ -22,9 +22,13 @@
   }
   
   &__date {
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: 3rem;
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
   }
   
   &__buttons {
@@ -48,13 +52,23 @@
     
     &--register {
       background-color: #ff8b8b; // Pink color from image
-      color: #333;
+      color: #2B2B2B;
+      font-family: "DM Sans";
+      font-size: 1.375rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 2.1875rem;
       border: 2px solid transparent;
     }
     
     &--devpost {
       background-color: white;
       color: #333;
+      font-family: "DM Sans";
+      font-size: 1.375rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 2.1875rem;
       border: 2px solid #ff8b8b;
     }
   }
@@ -64,8 +78,10 @@
 // Media queries for responsiveness
 @media (max-width: 768px) {
   .home {
+    margin-bottom: -20vh;
+
     &__title {
-      font-size: 4rem;
+      font-size: 3rem;
     }
     
     &__date {
@@ -85,8 +101,14 @@
 
 @media (max-width: 480px) {
   .home {
+    width: 100%;
+    
+    &__content {
+      padding: 0 1rem;
+    }
+
     &__title {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     
     &__date {

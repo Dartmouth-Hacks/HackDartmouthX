@@ -159,7 +159,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 2rem;
+    padding: 1rem;
 
     p {
       color: #456589;
@@ -193,4 +193,11 @@
       }
     }
   }
+}
+
+@media (max-width: 768px) {
+  .post-card-front .post-card-content .post-card-title-container .post-card-title {
+    font-size: 2.5rem;
+  }
+
 }

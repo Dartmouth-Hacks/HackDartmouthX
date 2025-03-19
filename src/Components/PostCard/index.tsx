@@ -36,12 +36,14 @@ const PostCard: React.FC<PostCardProps> = ({ title, description, topics }) => {
         </div>
         <div className="post-card-back">
           <div className="post-card-content">
-            <p className="post-card-description">{description}</p>
-            <ul className="post-card-topics">
-              {topics.map((topic, index) => (
-                <li key={index}>{topic}</li>
-              ))}
-            </ul>
+            <div className='post-card-content-container'>
+              <p className="post-card-description">{description}</p>
+              <ul className="post-card-topics">
+                {topics.map((topic, index) => (
+                  <li key={index}>{topic}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

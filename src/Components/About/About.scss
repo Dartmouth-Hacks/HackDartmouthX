@@ -60,13 +60,12 @@
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
-    
-
   }
   
   &__more-link {
     text-align: center;
     margin-top: 2rem;
+    z-index: 10000;
     
     p {
       font-size: 1.375rem;
@@ -86,6 +85,7 @@
       text-decoration-thickness: auto;
       text-underline-offset: auto;
       text-underline-position: from-font;
+      cursor: pointer;
       
       &:hover {
         opacity: 0.8;
@@ -97,6 +97,9 @@
 // Media queries for responsiveness
 @media (max-width: 768px) {
   .about {
+    margin-top: 10vh;
+    padding: 10vh 0 0 0;
+
     &__title {
       font-size: 2rem;
     }
@@ -104,10 +107,15 @@
     &__subtitle {
       font-size: 1.5rem;
     }
+
+    &__more-link {
+      margin-top: 0rem;
+    }
     
     &__description p,
     &__subtext,
     &__more-link p {
+      margin: 0;
       font-size: 1rem;
     }
   }

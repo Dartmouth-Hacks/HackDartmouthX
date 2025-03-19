@@ -114,3 +114,50 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+
+  .footer-container {
+    padding: 0 ;
+  }
+  
+  .footer-logo-section {
+    align-items: center;
+    gap: 1rem;
+    
+    .main-logo {
+      width: 150px;
+    }
+    
+    .social-icons {
+      gap: 0.5rem;
+      
+      .social-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  
+  .footer-info-section {
+    gap: 1rem;
+  }
+  
+  .footer-heading {
+    font-size: 1.25rem;
+  }
+  
+  .footer-subheading {
+    font-size: 1rem;
+  }
+  
+  .footer-text {
+    font-size: 1rem;
+  }
+  
+  .footer-link {
+    font-size: 1rem;
+  }
+
+}
