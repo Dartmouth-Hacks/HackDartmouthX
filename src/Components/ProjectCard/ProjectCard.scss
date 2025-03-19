@@ -11,8 +11,10 @@
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   background-color: white;
-  min-width: 25vw;
-  height: 250px;
+  max-width: 325px;
+  width: 30vw;
+  max-height: 250px;
+  height: auto;
   display: flex;
   justify-content: center;
   position: relative;

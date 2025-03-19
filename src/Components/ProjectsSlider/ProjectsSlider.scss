@@ -2,7 +2,7 @@
 .slider-container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1050px;
   margin: 0 auto;
 
   .slick-slider {
@@ -12,7 +12,8 @@
   .slick-list {
     padding-top: 50px !important;
     max-height: 300px !important;
-    // overflow-y: visible;
+    padding-bottom: 50px !important;
+    overflow-x: hidden;
   }
 
   .slick-track {
