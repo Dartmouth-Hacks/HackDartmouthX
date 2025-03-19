@@ -1,0 +1,33 @@
+.AppContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  
+  & > * {
+    width: 100%;
+  }
+  
+  & > nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 60px; 
+  }
+
+  .AppContent {
+    background: linear-gradient(to bottom, #67ADF1 0%, #67ADF1 15%, #EEF8FE 30%, #EEF8FE 75%, #EEF8FE 100%);
+    background-attachment: scroll;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y:auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}

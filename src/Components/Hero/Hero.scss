@@ -1,0 +1,136 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  
+  &__content {
+    text-align: center;
+    z-index: 1;
+  }
+  
+  &__title {
+    font-family: 'Azeret Mono', monospace;
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  &__date {
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  &__button {
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+    
+    &--register {
+      background-color: #ff8b8b; // Pink color from image
+      color: #2B2B2B;
+      font-family: "DM Sans";
+      font-size: 1.375rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 2.1875rem;
+      border: 2px solid transparent;
+    }
+    
+    &--devpost {
+      background-color: white;
+      color: #333;
+      font-family: "DM Sans";
+      font-size: 1.375rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 2.1875rem;
+      border: 2px solid #ff8b8b;
+    }
+  }
+  
+}
+
+// Media queries for responsiveness
+@media (max-width: 768px) {
+  .home {
+    margin-bottom: -20vh;
+
+    &__title {
+      font-size: 3rem;
+    }
+    
+    &__date {
+      font-size: 1.25rem;
+    }
+    
+    &__decoration {
+      width: 2.5rem;
+      height: 2.5rem;
+      
+      span {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    width: 100%;
+    
+    &__content {
+      padding: 0 1rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+    
+    &__date {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    &__buttons {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    &__decoration {
+      &--top-right {
+        top: 15%;
+        right: 10%;
+      }
+      
+      &--bottom-right {
+        bottom: 20%;
+        right: 5%;
+      }
+    }
+  }
+}
