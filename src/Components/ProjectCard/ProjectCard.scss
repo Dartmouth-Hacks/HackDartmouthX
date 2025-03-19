@@ -19,19 +19,17 @@
   justify-content: center;
   position: relative;
   z-index: 1;
-
+  transition: transform 0.2s ease, box-shadow 0.3s ease, opacity 0.2s ease;
   &.inactive {
     z-index: 1;
-    
+    transform: translateX(0) scale(1);
     &:hover {
       transform: translateY(-5px);
     }
   }
-  
   &.active {
-    transform: scale(1.2);
+    transform: scale(1.4);
     z-index: 10;
-    
     &:hover {
       transform: scale(1.2) translateY(-5px);
     }

@@ -46,14 +46,23 @@ const projects: ProjectMetadata[] = [
     url: 'https://devpost.com/software/cosmo-kittens?_gl=1*nbsx94*_gcl_au*NjY3MjI4MTQwLjE3NDE4ODc1NTA.*_ga*MTA3ODA3OTcyNS4xNzQxODg3NTUy*_ga_0YHJK3Y10M*MTc0MTg4NzU1MS4xLjEuMTc0MTg4NzYzMS4wLjAuMA..', 
     image: 'https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/002/855/930/datas/medium.png',
   },
+  {
+    id: 4,
+    name: 'Cosmo',
+    url: 'https://devpost.com/software/cosmo-kittens?_gl=1*nbsx94*_gcl_au*NjY3MjI4MTQwLjE3NDE4ODc1NTA.*_ga*MTA3ODA3OTcyNS4xNzQxODg3NTUy*_ga_0YHJK3Y10M*MTc0MTg4NzU1MS4xLjEuMTc0MTg4NzYzMS4wLjAuMA..', 
+    image: 'https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/002/855/930/datas/medium.png',
+  },
 ];
 
 const ProjectsSlider: React.FC = () => {
   // Add state to track the active slide
   const [activeSlide, setActiveSlide] = useState<number>(0);
 
-  const handleAfterChange = (currentSlide: number) => {
-    setActiveSlide(currentSlide);
+  // const handleAfterChange = (currentSlide: number) => {
+  //   setActiveSlide(currentSlide);
+  // };
+  const handleBeforeChange = (oldIndex: number, newIndex: number) => {
+    setActiveSlide(newIndex);
   };
 
   const sliderSettings = {
@@ -66,8 +75,10 @@ const ProjectsSlider: React.FC = () => {
     variableWidth: true,
     nextArrow: <CustomRightArrow />,
     prevArrow: <CustomLeftArrow />,
-    afterChange: handleAfterChange,
+    beforeChange: handleBeforeChange,
+    // afterChange: handleAfterChange,
     initialSlide: 0,
+    speed: 500,
   }
   
   return (
