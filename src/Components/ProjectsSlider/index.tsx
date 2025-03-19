@@ -58,7 +58,7 @@ const ProjectsSlider: React.FC = () => {
 
   const [activeSlide, setActiveSlide] = useState<number>(0);
 
-  const handleBeforeChange = (oldIndex: number, newIndex: number) => {
+  const handleBeforeChange = (_oldIndex: number, newIndex: number) => {
     setActiveSlide(newIndex);
   };
 
