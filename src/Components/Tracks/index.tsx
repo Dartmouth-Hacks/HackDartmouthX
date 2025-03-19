@@ -5,57 +5,47 @@ import PostCard from '../PostCard';
 const trackDetails = [
   {
     title: "EDUCATION",
-    description: "Description of the track and any potential topics within that category that hackers can do",
+    description: "Transform traditional learning paradigms by integrating technology to create more engaging, accessible, and personalized educational experiences.",
     topics: [
-      "Topic",
-      "Topic",
-      "Topic",
-      "Topic",
-      "Topic"
+      "Virtual tutoring and mentoring platforms",
+      "Gamified learning applications",
+      "Interactive curriculum and content management systems"
     ]
   },
   {
     title: "GAMING",
-    description: "Description of the track and any potential topics within that category that hackers can do",
+    description: "Redefine interactive entertainment with innovative game mechanics and immersive storytelling that blend creativity with cutting-edge technology.",
     topics: [
-      "Topic",
-      "Topic",
-      "Topic",
-      "Topic",
-      "Topic"
+      "Cross-platform multiplayer experiences",
+      "AI-driven game character behaviors",
+      "Procedurally generated worlds and levels",
     ]
   },
   {
     title: "HEALTHCARE",
-    description: "Description of the track and any potential topics within that category that hackers can do",
+    description: "Enhance patient care and streamline medical processes through digital solutions that improve diagnostics, telemedicine, and data-driven healthcare management.",
     topics: [
-      "Topic",
-      "Topic",
-      "Topic",
-      "Topic",
-      "Topic"
+      "Telehealth and remote consultation tools",
+      "AI-assisted diagnostics and predictive analytics",
+      "Wearable devices for real-time health monitoring"
     ]
   },
   {
     title: "AR/VR",
-    description: "Description of the track and any potential topics within that category that hackers can do",
+    description: "Create immersive augmented and virtual reality experiences that blend digital and physical worlds to revolutionize training, entertainment, and everyday interactions.",
     topics: [
-      "Topic",
-      "Topic",
-      "Topic",
-      "Topic",
-      "Topic"
+      "AR-guided interactive tours and navigation",
+      "VR-based training simulations for various industries",
+      "Mixed-reality collaboration and social interaction platforms",
     ]
   },
   {
     title: "FINTECH",
-    description: "Description of the track and any potential topics within that category that hackers can do",
+    description: "Empower financial innovation by developing secure, intuitive, and data-centric solutions that simplify transactions, enhance investment strategies, and drive financial inclusion.",
     topics: [
-      "Topic",
-      "Topic",
-      "Topic",
-      "Topic",
-      "Topic"
+      "Peer-to-peer payment and budgeting apps",
+      "Blockchain-based smart contract platforms",
+      "AI-powered investment analysis and fraud detection tools",
     ]
   }
 ];
