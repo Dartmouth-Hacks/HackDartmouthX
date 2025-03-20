@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://dartmouth-hacks.github.io/hackdartmouthx/",
+  "homepage": "https://hack-dartmouth.org",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
