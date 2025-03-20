@@ -12,7 +12,11 @@ const Hero: React.FC = () => {
           <a href="#register" className="home__button home__button--register">
             Register
           </a>
-          <a href="#devpost" className="home__button home__button--devpost">
+          <a 
+            href="https://hackdartmouth-x.devpost.com/?_gl=1*c75uzr*_gcl_au*MjEwODY0OTI5OS4xNzQwNDQzNjEx*_ga*MjA0MjQ5MTExMS4xNzQwNDQzNjEy*_ga_0YHJK3Y10M*MTc0MjQzODM2OC4zLjEuMTc0MjQzODQ1OC4wLjAuMA"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="home__button home__button--devpost">
             Devpost
           </a>
         </div>

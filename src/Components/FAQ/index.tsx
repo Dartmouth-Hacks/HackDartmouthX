@@ -1,36 +1,34 @@
-// FAQComponent.tsx
 import React, { useState } from 'react';
 import './FAQ.scss';
 import { ChevronDown } from 'lucide-react';
 
 
-// Define the structure of a FAQ item
 interface FAQItem {
   question: string;
-  answer: string;
+  answer: string | React.ReactNode;
 }
 
-// Sample FAQ data
+
 const faqData: FAQItem[] = [
   {
     question: "What is a hackathon?",
-    answer: "A hackathon is an event where programmers, designers, and others collaborate intensively on software projects over a short period, typically 24-48 hours. Participants work in teams to create innovative solutions to challenges."
+    answer: "A Hackathon is a 24-hour tech oriented event where students can come together to create amazing software and/or hardware projects. Come with an awesome idea, a great team, a positive attitude, or all of the above!"
   },
   {
     question: "Who can participate?",
-    answer: "HackDartmouth is open to all college students, regardless of major or experience level. Whether you're a beginner or an experienced developer, you're welcome to join!"
+    answer: "Any current college student! No experience necessary: you'll have the chance to pick up new skills from our workshops during the hackathon."
   },
   {
     question: "How do teams work?",
-    answer: "Teams typically consist of 2-4 members. You can form your own team in advance or find teammates during the team formation activities at the beginning of the event."
+    answer: "You can work on a project on your own, or you can work with a team. While teams can be specified on the application, you won't officially create your team until the event. We hold a team formation social before the hacking begins so it is totally okay to show up even if you don’t know anybody!"
   },
   {
     question: "What should I bring?",
-    answer: "You should bring your laptop, charger, any personal items you need, and your student ID. Consider bringing a change of clothes and toiletries if you plan to stay overnight."
+    answer: "It is recommended that you bring a computer, chargers, and a pair of headphones. Really anything that will help you feel comfortable ranging from hygiene products to blankets. Food will be provided."
   },
   {
     question: "When is the deadline to register?",
-    answer: "Registration typically closes one week before the event. Check the official website for the exact deadline date."
+    answer: "The application deadline for Dartmouth students is April 18th, and the deadline for anyone who is not a Dartmouth student is April 4th."
   },
   {
     question: "Will there be activities or workshops?",
@@ -38,19 +36,44 @@ const faqData: FAQItem[] = [
   },
   {
     question: "How do I travel to HackDartmouth?",
-    answer: "HackDartmouth is held on Dartmouth College campus in Hanover, NH. We offer travel reimbursements for participants coming from far away. Check our website for details on transportation options and reimbursement policies."
+    answer: "HackDartmouth will be running shuttles from Boston and New York the morning of the event which will be free for Hackathon attendees! Unfortunately, due to budget constraints we are unable to offer reimbursements for individual travel."
   },
   {
-    question: "What are the prizes?",
-    answer: "Prizes include cash awards, tech gadgets, opportunities for internships, and more. Specific prize categories and amounts will be announced closer to the event date."
+    question: "What can I win?",
+    answer: "A panel of judges will decide on the winning hacks based on criteria of creativity, usefulness, technical difficulty, and form. The top prizes are TBA. Previous prizes have included drones, Apple watches, Nintendo switches, bluetooth speakers, and other awesome tech."
   },
   {
     question: "How can I receive accommodations?",
-    answer: "We provide sleeping areas within the venue. If you require special accommodations, please email us in advance and we'll do our best to assist you."
+    answer: (
+      <>
+        <p>Shoot us an email at <a 
+          href="mailto:dartmouthhackathon@gmail.com"
+          className="faq-link"
+        >
+          dartmouthhackathon@gmail.com
+        </a> and we’ll get back to you as soon as we can!
+        </p>
+      </>
+    )
+  },
+  {
+    question: "MLH code of conduct?",
+    answer: (
+      <>
+        <p>The MLH Code of Conduct can be found on their website, <a 
+          href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="faq-link"
+        >
+          here!
+        </a>
+        </p>
+      </>
+    )
   }
 ];
 
-// Accordion Item Component
 const AccordionItem: React.FC<{
   item: FAQItem;
   isOpen: boolean;
@@ -65,7 +88,7 @@ const AccordionItem: React.FC<{
         </div>
       </div>
       <div className="accordion-content">
-        <p>{item.answer}</p>
+        {typeof item.answer === 'string' ? <p>{item.answer}</p> : item.answer}
       </div>
     </div>
   );
@@ -77,18 +100,15 @@ const FAQ: React.FC = () => {
 
   const toggleAccordion = (index: number) => {
     setOpenItemIndices(prev => {
-      // If index is already in the array, remove it (close accordion)
       if (prev.includes(index)) {
         return prev.filter(i => i !== index);
       } 
-      // Otherwise add it to the array (open accordion)
       else {
         return [...prev, index];
       }
     });
   };
 
-  // Split FAQ items into two columns
   const leftColumnItems = faqData.slice(0, Math.ceil(faqData.length / 2));
   const rightColumnItems = faqData.slice(Math.ceil(faqData.length / 2));
 

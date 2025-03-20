@@ -7,45 +7,60 @@ const trackDetails = [
     title: "EDUCATION",
     description: "Transform traditional learning paradigms by integrating technology to create more engaging, accessible, and personalized educational experiences.",
     topics: [
-      "Virtual tutoring and mentoring platforms",
-      "Gamified learning applications",
-      "Interactive curriculum and content management systems"
+      "EdTech",
+      "Research",
+      "K-12 Education",
+      "Social impact",
+      "Continuing Education",
+      "Gamification"
     ]
   },
   {
     title: "GAMING",
     description: "Redefine interactive entertainment with innovative game mechanics and immersive storytelling that blend creativity with cutting-edge technology.",
     topics: [
-      "Cross-platform multiplayer experiences",
-      "AI-driven game character behaviors",
-      "Procedurally generated worlds and levels",
+      "Game Design",
+      "E-Sports",
+      "Entertainment",
+      "Education",
+      "Skills Training",
+      "Accessibility in Gaming"
     ]
   },
   {
     title: "HEALTHCARE",
     description: "Enhance patient care and streamline medical processes through digital solutions that improve diagnostics, telemedicine, and data-driven healthcare management.",
     topics: [
-      "Telehealth and remote consultation tools",
-      "AI-assisted diagnostics and predictive analytics",
-      "Wearable devices for real-time health monitoring"
+      "Mental Health",
+      "Reproductive Health",
+      "Telemedicine",
+      "Holistic Care",
+      "Nutrition",
+      "General Healthcare"
     ]
   },
   {
     title: "AR/VR",
-    description: "Create immersive augmented and virtual reality experiences that blend digital and physical worlds to revolutionize training, entertainment, and everyday interactions.",
+    description: "Create immersive augmented and virtual reality experiences to revolutionize training, entertainment, and everyday interactions.",
     topics: [
-      "AR-guided interactive tours and navigation",
-      "VR-based training simulations for various industries",
-      "Mixed-reality collaboration and social interaction platforms",
+      "Immersive Learning",
+      "Virtual Training",
+      "Accessibility and Inclusion",
+      "Design Visualization",
+      "Shopping Experiences",
+      "Sports and Fitness"
     ]
   },
   {
-    title: "FINTECH",
+    title: "BLOCKCHAIN",
     description: "Empower financial innovation by developing secure, intuitive, and data-centric solutions that simplify transactions, enhance investment strategies, and drive financial inclusion.",
     topics: [
-      "Peer-to-peer payment and budgeting apps",
-      "Blockchain-based smart contract platforms",
-      "AI-powered investment analysis and fraud detection tools",
+      "Governance",
+      "Social Impact",
+      "Interoperability",
+      "Security",
+      "Non-Fungible Tokens",
+      "Cryptocurrency"
     ]
   }
 ];

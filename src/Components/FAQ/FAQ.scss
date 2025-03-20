@@ -110,6 +110,22 @@
     margin: 0;
     padding: 0;
   }
+
+  a {
+    color: #2B2B2B;
+    font-family: "DM Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.1875rem;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    cursor: pointer;
+  }
 }
 
 // Responsive styles

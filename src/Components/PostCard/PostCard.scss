@@ -158,6 +158,8 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     padding: 1rem;
 
@@ -169,7 +171,7 @@
       font-style: normal;
       font-weight: 500;
       line-height: normal;
-      margin-bottom: 0;
+      margin: 0;
     }
 
     ul {
@@ -179,12 +181,12 @@
       font-style: normal;
       font-weight: 500;
       line-height: normal;
-      padding: 0 10% 0 10%;
       list-style-position: inside; 
       text-align: left;
       align-items: left;
       margin: 1rem auto; 
-      min-width: 60%; 
+      min-width: 45%;
+      max-width: 50%;
       display: flex;
       flex-direction: column;
       
@@ -202,11 +204,12 @@
   }
 
   .post-card-back .post-card-content .post-card-description {
-    font-size: 0.8rem;
+    font-size: 0.825rem;
   }
 
   .post-card-back .post-card-content ul {
-    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-size: 0.825rem;
   }
 
 }
