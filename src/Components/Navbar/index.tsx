@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
         
         <div className="navbar__right">
           <a href="#about" className="link">About</a>
-          <a href="#apply" className="link">Apply</a>
+          <a href="https://forms.gle/wxrraAvjLn9d6gP7A" className="link" target="_blank" rel="noopener noreferrer">Apply</a>
           <a href="#faq" className="link">FAQ</a>
           <a href="#contact" className="link">Contact</a>
           <div className="navbar__logo-right">
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
       
       <div className={`navbar__mobile-menu ${menuOpen ? 'open' : ''}`}>
         <a href="#about" className="link" onClick={closeMenu}>About</a>
-        <a href="#apply" className="link" onClick={closeMenu}>Apply</a>
+        <a href="https://forms.gle/wxrraAvjLn9d6gP7A" className="link" target="_blank" rel="noopener noreferrer">Apply</a>
         <a href="#faq" className="link" onClick={closeMenu}>FAQ</a>
         <a href="#contact" className="link" onClick={closeMenu}>Contact</a>
         <div className="navbar__logo-right">

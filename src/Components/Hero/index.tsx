@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
         <p className="home__date">April 26 – 27, 2025 | Dartmouth College</p>
         
         <div className="home__buttons">
-          <a href="#register" className="home__button home__button--register">
+          <a href="https://forms.gle/wxrraAvjLn9d6gP7A" target="_blank" rel="noopener noreferrer" className="home__button home__button--register">
             Register
           </a>
           <a 
