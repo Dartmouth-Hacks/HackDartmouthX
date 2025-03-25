@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, memo, useRef, useEffect } from "react";
 import "./FAQ.scss";
 import { ChevronDown } from "lucide-react";
 
@@ -68,7 +68,7 @@ const faqData: FAQItem[] = [
           <a href="mailto:dartmouthhackathon@gmail.com" className="faq-link">
             dartmouthhackathon@gmail.com
           </a>{" "}
-          and we’ll get back to you as soon as we can!
+          and we'll get back to you as soon as we can!
         </p>
       </>
     ),
@@ -107,38 +107,70 @@ const faqData: FAQItem[] = [
   },
 ];
 
-const AccordionItem: React.FC<{
+const AccordionItem = memo<{
   item: FAQItem;
   isOpen: boolean;
   onClick: () => void;
-}> = ({ item, isOpen, onClick }) => {
+}>(({ item, isOpen, onClick }) => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    if (contentRef.current) {
+      if (isOpen) {
+        const contentHeight = contentRef.current.scrollHeight;
+        contentRef.current.style.height = `${contentHeight}px`;
+      } else {
+        contentRef.current.style.height = '0px';
+      }
+    }
+  }, [isOpen]);
+
   return (
     <div className={`accordion-item ${isOpen ? "open" : ""}`}>
-      <div className="accordion-header" onClick={onClick}>
+      <div 
+        className="accordion-header" 
+        onClick={onClick}
+        role="button"
+        aria-expanded={isOpen}
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            onClick();
+            e.preventDefault();
+          }
+        }}
+      >
         <span>{item.question}</span>
         <div className={`accordion-icon ${isOpen ? "rotated" : ""}`}>
           <ChevronDown size={24} />
         </div>
       </div>
-      <div className="accordion-content">
-        {typeof item.answer === "string" ? <p>{item.answer}</p> : item.answer}
+      <div 
+        ref={contentRef} 
+        className="accordion-content"
+        aria-hidden={!isOpen}
+      >
+        <div className="accordion-content-inner">
+          {typeof item.answer === "string" ? <p>{item.answer}</p> : item.answer}
+        </div>
       </div>
     </div>
   );
-};
+});
 
 const FAQ: React.FC = () => {
   const [openItemIndices, setOpenItemIndices] = useState<number[]>([]);
 
-  const toggleAccordion = (index: number) => {
+  const toggleAccordion = useCallback((index: number) => {
     setOpenItemIndices((prev) => {
       if (prev.includes(index)) {
         return prev.filter((i) => i !== index);
       } else {
-        return [...prev, index];
+        // Only allow one item to be open at a time for better performance
+        return [index];
       }
     });
-  };
+  }, []);
 
   const leftColumnItems = faqData.slice(0, Math.ceil(faqData.length / 2));
   const rightColumnItems = faqData.slice(Math.ceil(faqData.length / 2));
