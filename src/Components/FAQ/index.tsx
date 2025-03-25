@@ -90,7 +90,7 @@ const faqData: FAQItem[] = [
     ),
   },
   {
-    question: "What if I am interested in sponsoring the event??",
+    question: "What if I am interested in sponsoring the event?",
     answer: (
       <>
         <p>
