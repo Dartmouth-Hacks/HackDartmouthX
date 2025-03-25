@@ -4,6 +4,8 @@
   width: 100%;
   padding: 1rem 0;
   position: relative;
+  border-radius: 0 0 15px 15px;
+  
 
   &__container {
     display: flex;
@@ -24,7 +26,7 @@
       align-items: center;
 
       img {
-        height: 48px;
+        height: 64px;
         margin-right: 0.5rem;
       }
 
