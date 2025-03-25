@@ -44,7 +44,9 @@ const faqData: FAQItem[] = [
       <>
         <p>
           There are shuttles from Boston and New York to the Dartmouth Campus
-          which can be purchased <a href="https://dartmouthcoach.com/">here</a>.
+          which can be purchased <a href="https://dartmouthcoach.com/"target="_blank"
+            rel="noopener noreferrer"
+            className="faq-link">here</a>.
           Unfortunately, due to budget constraints HackDartmouth is unable to
           offer reimbursements for individual travel at this point. However, we
           will update attendees if this changes.
