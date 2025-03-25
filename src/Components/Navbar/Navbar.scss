@@ -3,8 +3,8 @@
   border: none;
   width: 100%;
   padding: 1rem 0;
-  position: relative; 
-  
+  position: relative;
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -14,20 +14,20 @@
     height: 100%;
     position: relative;
   }
-  
+
   &__left {
     display: flex;
     align-items: center;
-    
+
     .logo {
       display: flex;
       align-items: center;
-      
+
       img {
-        height: 32px;
+        height: 48px;
         margin-right: 0.5rem;
       }
-      
+
       span {
         color: white;
         font-size: 1.5rem;
@@ -35,31 +35,31 @@
       }
     }
   }
-  
+
   &__right {
     display: flex;
     gap: 2rem;
     align-items: center;
-    margin-right:2rem;
+    margin-right: 2rem;
 
-    .link {  
+    .link {
       color: white;
       text-decoration: none;
       font-size: 1rem;
       font-weight: 500;
       transition: opacity 0.2s ease;
-      font-family: 'DM Sans', sans-serif;
-      
+      font-family: "DM Sans", sans-serif;
+
       &:hover {
         opacity: 0.8;
       }
     }
-    
-    .navbar__logo-right {  
+
+    .navbar__logo-right {
       flex-direction: column;
       align-self: flex-start;
       padding-top: 3vh;
-      
+
       .mlh-badge {
         img {
           height: 120px;
@@ -115,7 +115,7 @@
     display: flex;
     position: fixed;
     top: 0;
-    left: -100%; 
+    left: -100%;
     height: 100vh;
     width: 75%;
     background-color: #1e88e5;
@@ -128,18 +128,18 @@
     gap: 1.5rem;
 
     &.open {
-      left: 0; 
+      left: 0;
     }
 
-    .link {  
+    .link {
       color: white;
       text-decoration: none;
       font-size: 1.2rem;
       font-weight: 500;
       transition: opacity 0.2s ease;
-      font-family: 'DM Sans', sans-serif;
+      font-family: "DM Sans", sans-serif;
       padding: 0.5rem 0;
-      
+
       &:hover {
         opacity: 0.8;
       }
@@ -147,7 +147,7 @@
 
     .navbar__logo-right {
       display: none;
-      
+
       .mlh-badge {
         img {
           height: 100px;
@@ -163,11 +163,11 @@
     &__container {
       position: relative;
     }
-    
+
     &__left {
       margin: 0 auto; /* Center the logo */
     }
-    
+
     &__right {
       display: none; /* Hide desktop navigation on mobile */
     }
