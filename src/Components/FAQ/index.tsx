@@ -31,7 +31,7 @@ const faqData: FAQItem[] = [
   {
     question: "When is the deadline to register?",
     answer:
-      "The application deadline for Dartmouth students is April 18th, and the deadline for anyone who is not a Dartmouth student is April 4th.",
+      "The application deadline for Dartmouth students is April 18th, and the deadline for anyone who is not a Dartmouth student is April 12th.",
   },
   {
     question: "Will there be activities or workshops?",
