@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         
         <div className="home__buttons">
           <a href="https://forms.gle/wxrraAvjLn9d6gP7A" target="_blank" rel="noopener noreferrer" className="home__button home__button--register">
-            Register
+            Register by April 12
           </a>
           <a 
             href="https://hackdartmouth-x.devpost.com/?_gl=1*c75uzr*_gcl_au*MjEwODY0OTI5OS4xNzQwNDQzNjEx*_ga*MjA0MjQ5MTExMS4xNzQwNDQzNjEy*_ga_0YHJK3Y10M*MTc0MjQzODM2OC4zLjEuMTc0MjQzODQ1OC4wLjAuMA"
