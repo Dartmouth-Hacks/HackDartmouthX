@@ -4,6 +4,7 @@ import './Hero.scss';
 const Hero: React.FC = () => {
   return (
     <section className="home">
+
       <div className="home__content">
         <h1 className="home__title">HackDartmouth X</h1>
         <p className="home__date">April 26 – 27, 2025 | Dartmouth College</p>
@@ -19,7 +20,10 @@ const Hero: React.FC = () => {
             className="home__button home__button--devpost">
             Devpost
           </a>
-        </div>
+      </div>
+      </div>
+      <div className='home_right_content'>
+        <img src="src/assets/globe.png" alt="HackDartmouth X" className="home__image" />
       </div>
     </section>
   );
