@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
-import hackDartmouthLogo from "~/assets/hackDartmouthLogo.svg";
-import MLHLogo from "~/assets/MLHLogo.svg";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +27,7 @@ const Navbar: React.FC = () => {
 
         <div className="navbar__left">
           <div className="logo">
-            <img src={hackDartmouthLogo} alt="HackDartmouth" />
+            <img src="/hackDartmouthLogo.svg" alt="HackDartmouth" />
             <span>HackDartmouth</span>
           </div>
         </div>
@@ -55,7 +53,7 @@ const Navbar: React.FC = () => {
           <div className="navbar__logo-right">
             <div className="mlh-badge">
               <a href="https://mlh.io/seasons/2025/events" target="_BLANK">
-                <img src={MLHLogo} alt="MLH Official 2025 Season" />
+                <img src="/MLHLogo.svg" alt="MLH Official 2025 Season" />
               </a>
             </div>
           </div>
@@ -87,7 +85,7 @@ const Navbar: React.FC = () => {
         </a>
         <div className="navbar__logo-right">
           <div className="mlh-badge">
-            <img src={MLHLogo} alt="MLH Official 2025 Season" />
+            <img src="/MLHLogo.svg" alt="MLH Official 2025 Season" />
           </div>
         </div>
       </div>

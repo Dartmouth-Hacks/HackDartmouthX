@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import CurvedArrow from '../../assets/curvedarrow.svg';
-import './PostCard.scss';
+import React, { useState } from "react";
+import "./PostCard.scss";
 
 interface PostCardProps {
   title: string;
@@ -16,7 +15,10 @@ const PostCard: React.FC<PostCardProps> = ({ title, description, topics }) => {
   };
 
   return (
-    <div className={`post-card-container ${isFlipped ? 'flipped' : ''}`} onClick={handleFlip}>
+    <div
+      className={`post-card-container ${isFlipped ? "flipped" : ""}`}
+      onClick={handleFlip}
+    >
       <div className="post-card">
         <div className="post-card-front">
           <div className="post-card-content">
@@ -26,17 +28,22 @@ const PostCard: React.FC<PostCardProps> = ({ title, description, topics }) => {
             </div>
             <div className="learn-more">
               <span>Learn More</span>
-              <img 
-                src={CurvedArrow} 
-                alt="Curved Arrow" 
-                style={{ fill: "#000", width: "0.93756rem", height: "1.21881rem", marginLeft: "5px" }} 
+              <img
+                src="/curvedarrow.svg"
+                alt="Curved Arrow"
+                style={{
+                  fill: "#000",
+                  width: "0.93756rem",
+                  height: "1.21881rem",
+                  marginLeft: "5px",
+                }}
               />
             </div>
           </div>
         </div>
         <div className="post-card-back">
           <div className="post-card-content">
-            <div className='post-card-content-container'>
+            <div className="post-card-content-container">
               <p className="post-card-description">{description}</p>
               <ul className="post-card-topics">
                 {topics.map((topic, index) => (
