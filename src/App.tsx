@@ -5,6 +5,7 @@ import './App.scss'
 import Tracks from './Components/Tracks'
 import Footer from './Components/Footer'
 import FAQ from './Components/FAQ'
+import Sponsors from './Components/Sponsors'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Tracks />
         <FAQ />
+        <Sponsors />
         <Footer />
       </div>
     </div>

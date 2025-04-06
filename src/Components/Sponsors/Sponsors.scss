@@ -1,0 +1,37 @@
+.sponsors {
+  width: 100%;
+  padding: 4rem  0 0 0;
+  padding-bottom: 6rem; 
+  padding-top: 4rem; 
+
+  .sponsors-title {
+    margin-top: 0;
+    color: #2F6098;
+    text-align: center;
+    font-family: "Azeret Mono";
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 7.5vh;
+  }
+
+  .sponsor-slide {
+    padding: 0 0.5rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sponsor-image-placeholder {
+    background-color: #d3d3d3; 
+    height: 25vh; 
+    width: 17.5vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a9a9a9;
+  }
+}
