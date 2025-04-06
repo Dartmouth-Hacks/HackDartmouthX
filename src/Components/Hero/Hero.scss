@@ -14,10 +14,12 @@
     z-index: 1;
   }
   &_right_content{
+    margin-right: 2rem;
+    margin-left: -2rem;
   }
   &__title {
     font-family: "Azeret Mono", monospace;
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(3rem, 7vw, 5rem);
     font-weight: 700;
     color: white;
     margin-bottom: 1rem;
@@ -89,6 +91,8 @@
     }
     &_right_content{
       margin-top: 7rem;
+      margin-right: 0;
+      margin-left: 0;
     }
     &__date {
       font-size: 1.25rem;
