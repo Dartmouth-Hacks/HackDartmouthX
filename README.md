@@ -1,6 +1,6 @@
 # HackDartmouth X Website
 
-Official website for HackDartmouth X, Dartmouth College's annual hackathon. Built with React, TypeScript, and Vite.
+Official website for HackDartmouth X, Dartmouth College's 10th annual hackathon. Built with React, TypeScript, and Vite.
 
 ## Features
 
