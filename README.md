@@ -1,1 +1,0 @@
-HackDartmouth X
