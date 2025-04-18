@@ -9,10 +9,12 @@ const sponsorPlaceholders = [
   "/ThayerLogo.png",
   "/NeuralinkLogo.svg",
   "/MavisLogo.png",
+  "/NovitaLogo.png",
   "/RunpodLogo.svg",
   "/ThayerLogo.png",
   "/NeuralinkLogo.svg",
   "/MavisLogo.png",
+  "/NovitaLogo.png",
 ];
 
 const Sponsors: React.FC = () => {
