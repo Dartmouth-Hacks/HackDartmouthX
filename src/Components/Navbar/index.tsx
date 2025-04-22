@@ -33,6 +33,14 @@ const Navbar: React.FC = () => {
         </div>
 
         <div className="navbar__right">
+          <a
+            href="https://forms.gle/wxrraAvjLn9d6gP7A"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apply
+          </a>
           <a href="#about" className="link">
             About
           </a>
@@ -62,6 +70,14 @@ const Navbar: React.FC = () => {
       ></div>
 
       <div className={`navbar__mobile-menu ${menuOpen ? "open" : ""}`}>
+        <a
+          href="https://forms.gle/wxrraAvjLn9d6gP7A"
+          className="link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Apply
+        </a>
         <a href="#about" className="link" onClick={closeMenu}>
           About
         </a>
