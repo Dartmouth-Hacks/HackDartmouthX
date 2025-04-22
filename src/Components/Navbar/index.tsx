@@ -36,19 +36,15 @@ const Navbar: React.FC = () => {
           <a href="#about" className="link">
             About
           </a>
-          <a
-            href="https://forms.gle/wxrraAvjLn9d6gP7A"
-            className="link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Apply
-          </a>
           <a href="#faq" className="link">
             FAQ
           </a>
           <a href="#contact" className="link">
             Contact
+          </a>
+          <a href="https://dartgo.org/hackdartmouthx-schedule" className="link" target="_blank"
+          rel="noopener noreferrer" >
+            Schedule
           </a>
           <div className="navbar__logo-right">
             <div className="mlh-badge">
@@ -69,19 +65,15 @@ const Navbar: React.FC = () => {
         <a href="#about" className="link" onClick={closeMenu}>
           About
         </a>
-        <a
-          href="https://forms.gle/wxrraAvjLn9d6gP7A"
-          className="link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Apply
-        </a>
         <a href="#faq" className="link" onClick={closeMenu}>
           FAQ
         </a>
         <a href="#contact" className="link" onClick={closeMenu}>
           Contact
+        </a>
+        <a href="https://dartgo.org/hackdartmouthx-schedule" className="link" target="_blank"
+          rel="noopener noreferrer" onClick={closeMenu}>
+          Schedule
         </a>
         <div className="navbar__logo-right">
           <div className="mlh-badge">

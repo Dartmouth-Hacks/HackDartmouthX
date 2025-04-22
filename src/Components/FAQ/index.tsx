@@ -92,6 +92,24 @@ const faqData: FAQItem[] = [
     ),
   },
   {
+    question: "What is the event's schedule?",
+    answer: (
+      <>
+        <p>
+          The event schedule can be found {" "}
+          <a
+            href="https://dartgo.org/hackdartmouthx-schedule"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="faq-link"
+          >
+            here!
+          </a>
+        </p>
+      </>
+    ),
+  },
+  {
     question: "What if I am interested in sponsoring the event?",
     answer: (
       <>
