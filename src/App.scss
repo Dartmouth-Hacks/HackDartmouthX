@@ -10,15 +10,6 @@
     width: 100%;
   }
   
-  & > nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    height: 60px; 
-  }
-
   .AppContent {
     background: linear-gradient(to bottom, #67ADF1 0%, #67ADF1 2.5%, #EEF8FE 20%, #EEF8FE 30%, #EEF8FE 75%, #EEF8FE 100%);
     background-attachment: scroll;
@@ -26,8 +17,56 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    overflow-y:auto;
+    overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    padding-top: 100px;
+    position: relative;
+    
+    & > nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: var(--content-width, 100%);
+      z-index: 100;
+    }
+  }
+}
+
+/* Mobile-specific scrollbar styling */
+@media (max-width: 768px) {
+  .AppContent {
+    position: relative;
+    isolation: isolate; /* Creates a new stacking context */
+    padding-top: 50px;
+
+    
+    /* Webkit browsers (Chrome, Safari, newer Edge) */
+    &::-webkit-scrollbar {
+      width: 8px;
+      z-index: 120;
+      position: relative;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      z-index: 120;
+      position: relative;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+      z-index: 120;
+      position: relative;
+    }
+    
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+    
+    & > nav {
+      z-index: 95; /* Lower than scrollbar */
+    }
   }
 }

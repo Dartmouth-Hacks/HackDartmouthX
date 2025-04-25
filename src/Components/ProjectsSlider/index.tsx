@@ -65,6 +65,8 @@ const ProjectsSlider: React.FC = () => {
   const sliderSettings = {
     className: "slider variable-width",
     dots: false,
+    swipeToSlide: false,
+    swipe: false,
     infinite: true,
     centerMode: true,
     slidesToShow: 3,

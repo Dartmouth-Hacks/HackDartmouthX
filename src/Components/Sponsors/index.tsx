@@ -28,7 +28,15 @@ const Sponsors: React.FC = () => {
     autoplaySpeed: 0,
     cssEase: "linear",
     arrows: false,
-    responsive: [],
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          speed: 4000,
+          slidesToShow: 1.1,
+        },
+      },
+    ]
   };
 
   return (

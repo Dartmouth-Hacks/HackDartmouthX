@@ -113,8 +113,13 @@
   .home {
     width: 100%;
 
+    &__image {
+      margin-top: -25vh;
+      height: 40vh;
+      width: auto;
+    }
     &__content {
-      padding: 0 1rem;
+      padding: 1rem 1rem;
     }
 
     &__title {
