@@ -1,4 +1,5 @@
 import Navbar from './Components/Navbar'
+import Banner from './Components/Banner'
 import Hero from './Components/Hero'
 import About from './Components/About'
 import './App.scss'
@@ -31,6 +32,7 @@ function App() {
     <div className="AppContainer">
       <div className="AppContent" ref={appContentRef}>
         <Navbar />
+        <Banner />
         <Hero />
         <About />
         <Tracks />

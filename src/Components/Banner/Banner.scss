@@ -1,0 +1,146 @@
+.banner {
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  margin: 1rem auto 0.5rem auto; 
+  z-index: 90;
+  animation: slideDown 0.5s ease-out;
+
+  &__content {
+    padding: 1rem 2rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(135deg, #00a86b 0%, #00d084 100%);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 168, 107, 0.3), 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+
+    // Decorative overlay
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: 1.25rem; 
+    font-weight: 700;
+    color: white;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &__subtitle {
+    font-size: 0.9rem; 
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 400;
+  }
+
+  &__button {
+    padding: 0.75rem 2rem; /* Reduced padding for narrower banner */
+    background-color: white;
+    color: #00a86b;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem; /* Smaller font size for narrower banner */
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      background-color: #f8f8f8;
+    }
+
+    &:active {
+      transform: translateY(-1px) scale(1);
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  // Tablet and mobile styles
+  @media (max-width: 768px) {
+    width: 95%;
+    margin: 0.75rem auto 0.5rem auto; /* Adjusted margins for mobile */
+
+    &__content {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.25rem 1.5rem; /* Reduced padding for mobile */
+      gap: 1rem; /* Reduced gap */
+      border-radius: 16px;
+    }
+
+    &__text {
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 1.1rem; /* Smaller for mobile */
+    }
+
+    &__subtitle {
+      font-size: 0.8rem; /* Smaller for mobile */
+    }
+
+    &__button {
+      width: 100%;
+      max-width: 280px;
+      padding: 0.75rem 1.5rem; /* Reduced padding */
+      font-size: 0.9rem; /* Smaller font */
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 98%;
+    margin: 0.5rem auto 0.25rem auto; /* Smaller margins for phones */
+
+    &__content {
+      padding: 1rem 1.25rem; /* Reduced padding for smallest screens */
+      border-radius: 12px;
+    }
+
+    &__title {
+      font-size: 1rem; /* Slightly smaller */
+    }
+
+    &__subtitle {
+      font-size: 0.75rem; /* Smaller for compact display */
+    }
+  }
+}
+
+
